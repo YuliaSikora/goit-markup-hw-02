@@ -1,0 +1,62 @@
+/* background: #E5E5E5
+background: #FFFFFF хэдер
+color: #2196F3 синий
+color: #212121 заголовки и хэдер
+color: #757575 серый абзацы и адрес в хэдере*/
+
+:root {
+  --main-text-color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --hero-color: #ffffff;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  color: var(--main-text-color);
+
+  letter-spacing: 0.02em;
+}
+header {
+  background-color: var(--hero-color);
+}
+.logo {
+  color: var(--title-color);
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-first {
+  color: var(--accent-color);
+}
+
+.site-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-color);
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.header-address a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.header-address a:hover,
+.header-address a:focus {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
