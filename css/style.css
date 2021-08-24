@@ -9,6 +9,7 @@ color: #757575 серый абзацы и адрес в хэдере*/
   --title-color: #212121;
   --accent-color: #2196f3;
   --hero-color: #ffffff;
+  --background-hero: #2f303a;
 }
 
 body {
@@ -62,7 +63,7 @@ ul {
   list-style: none;
 }
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-hero);
 }
 .hero > h1 {
   font-weight: 900;
@@ -74,7 +75,7 @@ ul {
 
   color: var(--hero-color);
 }
-button {
+.hero > button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -122,7 +123,7 @@ button {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-hero);
 }
 .footer a {
   text-decoration: none;
@@ -149,4 +150,40 @@ button {
 .footer-address a:hover,
 .footer-address a:focus {
   color: var(--accent-color);
+}
+
+.our-work button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--title-color);
+  background-color: var(--hero-color);
+}
+.our-work button:hover,
+.our-work button:focus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+}
+.gallery h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+.gallery p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
