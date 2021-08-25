@@ -10,6 +10,8 @@ color: #757575 серый абзацы и адрес в хэдере*/
   --accent-color: #2196f3;
   --hero-color: #ffffff;
   --background-hero: #2f303a;
+  --background-name: #f5f4fa;
+  --background-button-hover: #188ce8;
 }
 
 body {
@@ -41,9 +43,13 @@ body {
   line-height: 1.14;
   color: var(--title-color);
   text-decoration: none;
+  background-color: var(--hero-color);
 }
 .site-nav a:hover,
 .site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav a.current {
   color: var(--accent-color);
 }
 .header-address a {
@@ -53,6 +59,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
+  background-color: var(--hero-color);
 }
 .header-address a:hover,
 .header-address a:focus {
@@ -76,6 +83,7 @@ ul {
   color: var(--hero-color);
 }
 .hero > button {
+  font-family: roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -86,6 +94,9 @@ ul {
   color: var(--hero-color);
   background-color: var(--accent-color);
 }
+.hero > button:hover {
+  background-color: var(--background-button-hover);
+}
 .section-title {
   font-weight: 700;
   font-size: 14px;
@@ -95,12 +106,15 @@ ul {
 
   color: var(--title-color);
 }
-.section-title .text {
+.text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
+}
+.worker {
+  background-color: var(--background-name);
 }
 .img-title {
   font-weight: 700;
@@ -113,12 +127,17 @@ ul {
 }
 
 .img-worker {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .worker-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
   color: var(--title-color);
 }
 
@@ -153,6 +172,7 @@ ul {
 }
 
 .our-work button {
+  font-family: roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -160,7 +180,7 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--title-color);
-  background-color: var(--hero-color);
+  background-color: var(--background-name);
 }
 .our-work button:hover,
 .our-work button:focus {
@@ -186,4 +206,8 @@ ul {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.gallery a {
+  text-decoration: none;
 }
